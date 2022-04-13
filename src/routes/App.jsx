@@ -4,6 +4,7 @@ import "../styles/style.css"
 import {BrowserRouter, Routes, Route} from "react-router-dom"
 import Home from "../pages/Home"
 import NotFound from "../pages/NotFound";
+import Testimonio from "../pages/Testimonio";
 
 const App = ()=>{
     return(
@@ -11,6 +12,7 @@ const App = ()=>{
         <Layout>
           <Routes>
             <Route exact path="/" element={<Home/>}/>
+            <Route path="/testimonios" element={<Testimonio/>}/>
             <Route path="*" element={<NotFound/>}/>
           </Routes>
         </Layout>

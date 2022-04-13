@@ -4,4 +4,4 @@ const container = document.getElementById('root');
 const root = createRoot(container);
 import App from "./routes/App"
 
-root.render(<App />);
+root.render(<React.StrictMode><App /></React.StrictMode>);
