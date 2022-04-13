@@ -3,7 +3,10 @@ import imageEma from "@images/testimonio-emma.png"
 
 const Home = ()=>{
   return(
-    <img src={imageEma}/>
+    <>
+    <h1>Hola desde react</h1>
+    <a href="/testimonios">testimonio</a>
+    </>
   );
 };
 
