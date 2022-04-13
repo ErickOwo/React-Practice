@@ -1,5 +1,5 @@
 import React from "react";
-import Testimony from "../components/Testimony";
+import Testimony from "@components/Testimony";
 import imageShawn from "@images/testimonio-shawn.png";
 import imageSarah from "@images/testimonio-sarah.png";
 import imageEmma from "@images/testimonio-emma.png"

@@ -1,0 +1,37 @@
+h1, a{
+    margin: 0;
+    padding: 0;
+}
+.home-container {
+    background-color: #120e43;
+    height: 100vh;
+    width: 100%;
+    padding-top: 60px;
+}
+.home-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 600px;
+    height: 400px;
+    margin: auto;
+    background-color: #000000;
+    border: 2px solid #fff;
+    border-radius: 5px;
+}
+.principal-title {
+    color: #a9a3ff;
+    padding: 40px 0 25px;
+    text-align: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.anchor {
+    text-decoration: none;
+    margin-bottom: 0px;
+    color: #8295ff;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+.anchor:hover {
+    color: #08b908;
+}
