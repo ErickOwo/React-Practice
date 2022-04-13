@@ -11,7 +11,10 @@ module.exports = {
     },
     mode: "development",
     resolve: {
-        extensions: [".js",".jsx"]
+        extensions: [".js",".jsx"],
+        alias: {
+            "@images": path.resolve(__dirname,"src/assets/images")
+        }
     },
     module: {
         rules: [
@@ -37,7 +40,11 @@ module.exports = {
             },
             {
                 test: /\.png$/,
+<<<<<<< HEAD
                 type: "asset/resource"
+=======
+                type: "asset"
+>>>>>>> 77333a489a386b69bf9399eacb3261be4bf4ff2c
             }
         ]
     },

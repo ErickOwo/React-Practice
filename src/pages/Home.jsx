@@ -1,8 +1,9 @@
 import React from "react";
+import imageEma from "@images/testimonio-emma.png"
 
 const Home = ()=>{
   return(
-    <h1>Practica con React</h1>
+    <img src={imageEma}/>
   );
 };
 
