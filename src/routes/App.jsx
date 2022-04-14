@@ -6,6 +6,7 @@ import NotFound from "@pages/NotFound";
 import Testimonials from "@pages/Testimonials";
 import CounterOfClicks from "@pages/Counter-of-Clicks";
 import Calculator from "@pages/Calculator";
+import Tasks from "@pages/Tasks";
 
 const App = ()=>{
     return(
@@ -16,6 +17,7 @@ const App = ()=>{
             <Route path="/testimonials" element={<Testimonials/>}/>
             <Route path="/counter-of-clicks" element={<CounterOfClicks/>}/>
             <Route path="/calculator" element={<Calculator/>}/>
+            <Route path="/tasks" element={<Tasks/>}/>
             <Route path="*" element={<NotFound/>}/>
           </Routes>
         </Layout>

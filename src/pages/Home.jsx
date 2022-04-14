@@ -9,6 +9,7 @@ const Home = ()=>{
         <a className="anchor" href="/testimonials">Testimonios</a>
         <a className="anchor" href="/counter-of-clicks">Contador de Clicks</a>
         <a className="anchor" href="/calculator">Calculadora</a>
+        <a className="anchor" href="/tasks">Tareas</a>
       </div>
     </div>
   );
