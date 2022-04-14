@@ -10,7 +10,7 @@ const ContainerCalculator = () => {
   const addInput = val => {
     setInput(input + val);
   } 
-  const crearInput = ()=>{
+  const clearInput = ()=>{
     setInput("");
   }
   const calcResult = val =>{
@@ -19,6 +19,9 @@ const ContainerCalculator = () => {
     } else {
       alert("Por favor ingrese valores para realizar los cálculos");
     }
+  }
+  const delInput = () =>{
+    setInput(input.substring(0, input.length-1));
   }
 
   return (
@@ -50,7 +53,8 @@ const ContainerCalculator = () => {
           <ButtonCalc children="/" eventHandler={addInput} />
         </div>
         <div className="row">
-          <ButtonClear eventHandler={crearInput}>Clear</ButtonClear>
+          <ButtonClear eventHandler={clearInput}>Clear</ButtonClear>
+          <ButtonClear eventHandler={delInput}>C</ButtonClear>
         </div>
       </div>
     </div>

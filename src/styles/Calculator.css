@@ -1,6 +1,7 @@
 .container-calculator {
     padding: 70px 0 40px;
     background-color: #1b1b37;
+    min-height: 100vh;
 }
 .calculator {
     display: flex;
