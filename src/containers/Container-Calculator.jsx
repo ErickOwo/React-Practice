@@ -13,11 +13,13 @@ const ContainerCalculator = () => {
   const clearInput = ()=>{
     setInput("");
   }
-  const calcResult = val =>{
-    if(input){
-      setInput(evaluate(input))
-    } else {
-      alert("Por favor ingrese valores para realizar los cálculos");
+  const calcResult = () =>{
+    const regex = /[+-]?\d+[+-\\*]\d+/.test(input);
+    const regex2 = /\d/.test(input);
+    if(input && regex && regex2) setInput(evaluate(input));
+      else {
+        if(!input) alert("Por favor ingrese valores para realizar los cálculos");
+        else alert("La operación no ha podido realizarse correctamente");
     }
   }
   const delInput = () =>{
@@ -54,7 +56,7 @@ const ContainerCalculator = () => {
         </div>
         <div className="row">
           <ButtonClear eventHandler={clearInput}>Clear</ButtonClear>
-          <ButtonClear eventHandler={delInput}>C</ButtonClear>
+          <ButtonClear eventHandler={delInput}>Del</ButtonClear>
         </div>
       </div>
     </div>

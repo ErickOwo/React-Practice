@@ -29,6 +29,7 @@
     padding-right: 30px;
     margin: 1px solid #888;
     box-shadow: -1px 4px 1px 1px #fff;
+    overflow: hidden;
 }
 .row {
     display: flex;
@@ -73,6 +74,8 @@
     cursor: pointer;
     align-items: center;
     justify-content: center;
+    border-radius: 25px;
+    user-select: none;
 }
 .button-clear:hover {
     background-color: #ebb000;
